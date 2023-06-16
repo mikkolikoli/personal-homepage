@@ -40,9 +40,9 @@ export default function Home() {
           Hey, <br />
           I&apos;m Mikko Rajakorpi, a computer science student at Tampere University. <br />
           This is my personal website. Here you can look at my 
-          <Link className='text-blue-600 visited:text-purple-600 underline' href="/portfolio">portfolio</Link>, 
-          <Link className='text-blue-600 visited:text-purple-600 underline' href="/cv">CV</Link> or 
-          <Link className='text-blue-600 visited:text-purple-600 underline' href="/contact">contact me</Link>.
+          <Link className='text-blue-600 visited:text-purple-600 underline' href="/portfolio"> portfolio</Link>, 
+          <Link className='text-blue-600 visited:text-purple-600 underline' href="/cv"> CV</Link> or 
+          <Link className='text-blue-600 visited:text-purple-600 underline' href="/contact"> contact me</Link>.
         </Typography>
       </Box>
     </Stack>
