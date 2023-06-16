@@ -1,7 +1,5 @@
 "use client"
 
-import { useState } from "react"
-
 import { 
   Grid, 
   Accordion, 
@@ -13,23 +11,19 @@ import {
 } from "@mui/material"
 
 import RegularList from "@/components/lists/RegularList";
+import NestedList from "@/components/lists/NestedList";
+import ContactInformationList from "@/components/lists/ContactInformationList";
 import Image from "next/image"
 
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 
 import { education, experience, languages, skills, volunteering, contact } from "@/data/cv";
-import NestedList from "@/components/lists/NestedList";
-import ContactInformationList from "@/components/lists/ContactInformationList";
 
 export default function CVPage() {
-  const [ tuniOpen, setTuniOpen ] = useState(true)
-  const [ goetheOpen, setGoetheOpen ] = useState(true)
-  const [ lieferandoOpen, setLieferandoOpen ] = useState(true)
-  const [ luuppi22Open, setLuuppi22Open ] = useState(true)
-  const [ luuppi23Open, setLuuppi23Open ] = useState(true)
 
   return (
     <Grid container
+      component="main"
       padding={6}
       spacing={4}
     >

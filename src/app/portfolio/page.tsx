@@ -9,6 +9,7 @@ export default function PortfolioPage() {
   return (
     <Grid 
       container 
+      component="main"
       spacing={4}
       justifyContent="center"
       alignItems="center"
