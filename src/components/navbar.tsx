@@ -5,7 +5,6 @@ import { Avatar, AppBar, Box, Toolbar, Typography, Container } from '@mui/materi
 import MobileMenu from './MobileMenu';
 import Link from 'next/link'
 
-
 const pages = ['CV', 'Portfolio', 'Contact'];
 
 export default function Navbar() {
@@ -15,7 +14,7 @@ export default function Navbar() {
         <Toolbar disableGutters>
           
           <Link href="/">
-            <Avatar alt='Mikko Rajakorpi' src='avatar.jpg' />
+            <Avatar alt='Mikko Rajakorpi' src="/static/images/avatar.JPG" />
           </Link>
           <Link href="/" className='hover:text-gray-500 ml-4'>
             <Typography

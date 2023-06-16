@@ -1,6 +1,6 @@
 "use client"
 
-import { Box, Divider, Stack, Typography } from '@mui/material'
+import { Box, Stack, Typography } from '@mui/material'
 
 import Image from 'next/image'
 import Link from 'next/link'
@@ -19,10 +19,10 @@ export default function Home() {
         m={2}
       >
         <Box display={{xs: 'flex', md: 'none'}}>
-          <Image src="/avatar.jpg" alt="Mikko Rajakorpi" width={250} height={250} className='rounded' />
+          <Image src="/static/images/avatar.JPG" alt="Mikko Rajakorpi" width={250} height={250} className='rounded' />
         </Box>
         <Box display={{xs: 'none', md: 'flex'}}>
-          <Image src="/avatar.jpg" alt="Mikko Rajakorpi" width={100} height={100} className='rounded' />
+          <Image src="/static/images/avatar.JPG" alt="Mikko Rajakorpi" width={100} height={100} className='rounded' />
         </Box>
         <Typography 
           variant='h1'
