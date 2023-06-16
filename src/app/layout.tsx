@@ -40,10 +40,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <title>Mikko Rajakorpi</title>
         <meta name="description" content="Mikko Rajakorpi's personal website" />
-      </Head>
+      </head>
       <body className={inter.className}>
         <ThemeProvider theme={darkTheme}>
           <CssBaseline />

@@ -49,7 +49,7 @@ export default function MobileMenu({items}: DrawerProps) {
         {items.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton>
-              <Link href={"/" + item.toLowerCase()}> 
+              <Link href={`/${item.toLowerCase()}`}> 
                 <ListItemText primary={item} />
               </Link>
             </ListItemButton>

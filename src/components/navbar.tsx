@@ -39,7 +39,7 @@ export default function Navbar() {
               
               <Link 
                 key={page} 
-                href={"/" + page.toLowerCase}
+                href={`/${page.toLowerCase()}`}
                 className="hover:text-gray-500 mx-4">{page}</Link>
             ))}
           </Box>
