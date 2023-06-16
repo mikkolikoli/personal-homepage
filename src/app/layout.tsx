@@ -4,16 +4,18 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 
 import Navbar from '@/components/navbar'
-import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
 import Head from 'next/head';
 
-const darkTheme = createTheme({
+let darkTheme = createTheme({
   palette: {
     mode: 'dark',
   },
 });
+darkTheme = responsiveFontSizes(darkTheme)
+/*
 darkTheme.typography.h1 = {
   fontSize: '2.4rem',
   '@media (min-width:600px)': {
@@ -23,6 +25,7 @@ darkTheme.typography.h1 = {
     fontSize: '4rem',
   },
 };
+*/
 
 const inter = Inter({ subsets: ['latin'] })
 
