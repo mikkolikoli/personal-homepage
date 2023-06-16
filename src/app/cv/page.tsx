@@ -40,7 +40,7 @@ export default function CVPage() {
           <Stack>
             <Typography variant="h1">Mikko Rajakorpi</Typography>
             <Typography variant="h2">About me</Typography>
-            <Typography maxWidth={700}>I&apos;m a yound software developer specialized in web front-end development.
+            <Typography maxWidth={700}>I&apos;m a yound software developer interested in web front-end development.
                I work well in a team, but can work alone on projects too if needed. I&apos;m always looking to improve my skills as a developer.
             </Typography>
           </Stack>
