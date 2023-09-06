@@ -1,6 +1,6 @@
 export const contact = {
   telephone: "045 800 2922",
-  email: "contact@mikkorajakorpi.fi",
+  email: "rajakorpimikko@gmail.com",
   website: "mikkorajakorpi.fi",
   github: "github.com/mikkolikoli"
 }
