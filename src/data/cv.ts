@@ -1,6 +1,6 @@
 export const contact = {
   telephone: "045 800 2922",
-  email: "rajakorpimikko@gmail.com",
+  email: "mikko@mikkorajakorpi.fi",
   website: "mikkorajakorpi.fi",
   github: "github.com/mikkolikoli"
 }
@@ -47,5 +47,9 @@ export const volunteering = [
   {
     name: "Luuppi RY board",
     nestedItems: ["Pii-klubi manager", "Kyykkä manager", "2023"]
+  },
+  {
+    name: "Spinni RY official (toimihenkilö)",
+    nestedItems: ["Rentals Assistant", "2024"]
   }
 ]
