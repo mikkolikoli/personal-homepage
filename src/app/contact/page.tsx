@@ -25,7 +25,7 @@ export default function ContactPage() {
       </Typography>
 
       <List>
-        <IconListItem link to="mailto:contact@mikkorajakorpi.fi" content="contact@mikkorajakorpi.fi">
+        <IconListItem link to="mailto:mikko@mikkorajakorpi.fi" content="mikko@mikkorajakorpi.fi">
           <EmailIcon />
         </IconListItem>
 
