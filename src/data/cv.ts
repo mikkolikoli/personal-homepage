@@ -8,6 +8,7 @@ export const contact = {
 export const skills = [
   "React (including Next.js)",
   "Vue.js",
+  "Javascript",
   "Typescript",
   "Python",
   ".NET",
@@ -36,6 +37,10 @@ export const experience = [
   {
     name: "Lieferando.de",
     nestedItems: ["Delivery driver", "2020 - 2021"]
+  },
+  {
+    name: "Tampere University",
+    nestedItems: ["Teaching assistant", "Feb 2024 - May 2024"]
   }
 ]
 
