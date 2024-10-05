@@ -20,7 +20,7 @@ export const projects = [
     link: undefined
   },
   {
-    name: "Document database",
+    name: "Document database (unfinished)",
     code: "https://github.com/mikkolikoli/database",
     link: undefined
   }
