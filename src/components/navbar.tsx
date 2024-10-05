@@ -1,9 +1,12 @@
 "use client"
 
-import { Avatar, AppBar, Box, Toolbar, Typography, Container } from '@mui/material';
+import { useRouter } from 'next/router';
+
+import { Avatar, AppBar, Box, Toolbar, Typography, Container, Tooltip, IconButton } from '@mui/material';
 
 import MobileMenu from './MobileMenu';
 import Link from 'next/link'
+import { Language } from '@mui/icons-material';
 
 const pages = ['CV', 'Portfolio', 'Contact'];
 const pages_de = ['Lebenslauf', 'Portfolio', 'Kontakt']
@@ -13,6 +16,12 @@ interface NavBarProps {
 }
 
 export default function Navbar({lang}: NavBarProps) {
+  const router = useRouter()
+
+  const swapLanguage = () => {
+    lang === 'en'? router.push('/de'): router.push('/')
+  }
+
   return (
     <AppBar position="static" component="nav">
       <Container maxWidth="xl">
@@ -21,7 +30,7 @@ export default function Navbar({lang}: NavBarProps) {
           <Link href="/">
             <Avatar alt='Mikko Rajakorpi' src="/static/images/avatar.JPG" />
           </Link>
-          <Link href={lang === 'en'? '/': '/de/'} className='hover:text-gray-500 ml-4'>
+          <Link href={lang === 'en'? '/': '/de'} className='hover:text-gray-500 ml-4'>
             <Typography
               variant="h6"
               noWrap
@@ -53,6 +62,14 @@ export default function Navbar({lang}: NavBarProps) {
                 href={`/${page.toLowerCase()}`}
                 className="hover:text-gray-500 mx-4">{page}</Link>
             ))}
+          </Box>
+
+          <Box sx={{ flexGrow: 0 }}>
+            <Tooltip title = { lang === 'en'? 'Deutsch': 'English' }>
+              <IconButton aria-label = { lang === 'en'? 'Auf Deutsch wechseln': 'Swap to English' }>
+                <Language />
+              </IconButton>
+            </Tooltip>
           </Box>
         </Toolbar>
       </Container>
