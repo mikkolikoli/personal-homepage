@@ -42,16 +42,16 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="de">
       <head>
         <title>Mikko Rajakorpi</title>
-        <meta name="description" content="Mikko Rajakorpi" />
+        <meta name="description" content="Mikko Rajakorpis persönliche Website" />
       </head>
       <body className={inter.className}>
         <ThemeProvider theme={darkTheme}>
           <CssBaseline />
           <header>
-            <Navbar />
+            <Navbar lang="de" />
           </header>
           {children}
         </ThemeProvider>

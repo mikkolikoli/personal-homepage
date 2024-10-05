@@ -1,6 +1,6 @@
 "use client"
 
-import './globals.css'
+import '../globals.css'
 import { Inter } from 'next/font/google'
 
 import Navbar from '@/components/navbar'
@@ -51,7 +51,7 @@ export default function RootLayout({
         <ThemeProvider theme={darkTheme}>
           <CssBaseline />
           <header>
-            <Navbar />
+            <Navbar lang="en" />
           </header>
           {children}
         </ThemeProvider>

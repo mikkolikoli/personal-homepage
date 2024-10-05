@@ -6,8 +6,13 @@ import MobileMenu from './MobileMenu';
 import Link from 'next/link'
 
 const pages = ['CV', 'Portfolio', 'Contact'];
+const pages_de = ['Lebenslauf', 'Portfolio', 'Kontakt']
 
-export default function Navbar() {
+interface NavBarProps {
+  lang: 'de' | 'en' | 'fi'
+}
+
+export default function Navbar({lang}: NavBarProps) {
   return (
     <AppBar position="static" component="nav">
       <Container maxWidth="xl">
@@ -16,7 +21,7 @@ export default function Navbar() {
           <Link href="/">
             <Avatar alt='Mikko Rajakorpi' src="/static/images/avatar.JPG" />
           </Link>
-          <Link href="/" className='hover:text-gray-500 ml-4'>
+          <Link href={lang === 'en'? '/': '/de/'} className='hover:text-gray-500 ml-4'>
             <Typography
               variant="h6"
               noWrap
@@ -32,11 +37,17 @@ export default function Navbar() {
           </Link>
           
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <MobileMenu items={pages} />
+            <MobileMenu items={lang === 'en'? pages: pages_de} />
           </Box>
+
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
-              
+            {lang === 'en'? pages.map((page) => (
+              <Link 
+                key={page} 
+                href={`/${page.toLowerCase()}`}
+                className="hover:text-gray-500 mx-4">{page}</Link>
+            )):
+            pages_de.map((page) => (
               <Link 
                 key={page} 
                 href={`/${page.toLowerCase()}`}
